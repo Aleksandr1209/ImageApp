@@ -72,7 +72,6 @@ public class ImageController {
 
     private void showPixelColor(int x, int y) {
         try {
-            // Дополнительная проверка координат
             if (x < 0 || y < 0 || x >= model.getWidth() || y >= model.getHeight()) {
                 view.setColorText("Invalid coordinates");
                 return;
